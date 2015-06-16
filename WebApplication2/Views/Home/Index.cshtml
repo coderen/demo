@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    @*<script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>*@
+    <script src="~/ckeditor/ckeditor.js"></script>
+</head>
+<body>
+    <div> 
+        <textarea id="editor1" cols="5" rows="5"></textarea>
+        <script>
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace( 'editor1' );
+            CKEDITOR.editorConfig = function( config ) {
+    config.language = 'fr';
+    config.uiColor = '#AADC6E';
+};
+        </script>
+    </div>
+</body>
+</html>
